@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*
+$width:100%;
+$background:#333;*/
+/*头部的变量*/
+/*margin20*/
+/*32px字体*/
+/*28号字体*/
+/*24号字体*/
+/*20号字体*/
+/*26号字体*/
+/*30号字体*/
+/*paddding33*/
+.health_one {
+  height: 100%;
+  background: #eeeeee; }
+  .health_one .heal_1 {
+    height: 100%;
+    margin: 0 0.2666666667rem;
+    position: relative; }
+    .health_one .heal_1 .health_im {
+      width: 100%;
+      height: 5.12rem;
+      background: #ffffff;
+      border-radius: 0.0666666667rem;
+      position: absolute;
+      top: 0.4266666667rem; }
+      .health_one .heal_1 .health_im img {
+        height: 100%;
+        width: 100%; }
+    .health_one .heal_1 .health_im:nth-of-type(2) {
+      top: 5.92rem; }
+
+/*# sourceMappingURL=health1.css.map */

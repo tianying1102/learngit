@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*
+$width:100%;
+$background:#333;*/
+/*头部的变量*/
+/*margin20*/
+/*32px字体*/
+/*28号字体*/
+/*24号字体*/
+/*20号字体*/
+/*26号字体*/
+/*30号字体*/
+/*paddding33*/
+.img_container {
+  width: 100%; }
+  .img_container img {
+    height: 100%;
+    width: 100%; }
+
+.bac_c {
+  width: 100%;
+  min-height: 5rem;
+  background: #c0f3ee; }
+  .bac_c .b_container {
+    margin: 0 0.2666666667rem 0 0.2666666667rem;
+    min-height: 5rem; }
+    .bac_c .b_container .img_1:last-of-type {
+      margin-bottom: 0; }
+    .bac_c .b_container .img_1 {
+      height: 2.1866666667rem;
+      border-top: 0.0133333333rem solid #ffffff;
+      border-bottom: 0.0133333333rem solid #ffffff;
+      background: #d8f8f5;
+      position: relative;
+      border-radius: 0.0533333333rem;
+      margin-bottom: 0.2666666667rem; }
+      .bac_c .b_container .img_1 .img_left {
+        float: left;
+        width: 2.2133333333rem;
+        height: 1.6533333333rem;
+        padding-top: 0.2666666667rem;
+        padding-left: 0.2666666667rem; }
+        .bac_c .b_container .img_1 .img_left img {
+          height: 100%;
+          width: 100%; }
+      .bac_c .b_container .img_1 .contain_img {
+        width: 4.4533333333rem;
+        height: 1.92rem;
+        padding-top: 0.2666666667rem;
+        float: left; }
+        .bac_c .b_container .img_1 .contain_img .p_1 {
+          font-size: 0.3733333333rem;
+          color: #333333;
+          font-weight: 700;
+          text-indent: 0.24rem;
+          height: 0.5866666667rem;
+          line-height: 0.5866666667rem; }
+        .bac_c .b_container .img_1 .contain_img .p_2 {
+          font-size: 0.32rem;
+          color: #7b8180;
+          text-indent: 0.24rem;
+          height: 0.5333333333rem;
+          line-height: 0.5333333333rem; }
+        .bac_c .b_container .img_1 .contain_img .p_3 {
+          font-size: 0.32rem;
+          color: #7b8180;
+          text-indent: 0.24rem;
+          height: 0.5333333333rem;
+          line-height: 0.5333333333rem; }
+      .bac_c .b_container .img_1 .right_im {
+        position: absolute;
+        width: 1.92rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        color: #ffffff;
+        background: #ff6666;
+        text-align: center;
+        top: 0.7466666667rem;
+        right: 0.2666666667rem;
+        border-radius: 0.6666666667rem;
+        font-size: 0.32rem; }
+
+.fot {
+  width: 100%;
+  height: 1.1733333333rem; }
+
+.foot_m {
+  width: 100%;
+  height: 1.1733333333rem;
+  line-height: 1.1733333333rem;
+  text-align: center;
+  color: #ffffff;
+  background: #ff6666;
+  font-size: 0.3733333333rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+/*没有体检的健康报告*/
+body {
+  background: #eeeeee; }
+
+.health_m {
+  width: 100%; }
+  .health_m img {
+    height: 100%;
+    width: 100%; }
+
+.con_m {
+  width: 100%;
+  min-height: 4rem; }
+  .con_m .con_1 {
+    margin: 0 0.2666666667rem 0 0.2666666667rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-indent: 0.2666666667rem;
+    color: #666666;
+    position: relative; }
+  .con_m .con_1:before {
+    content: '';
+    width: 0.1333333333rem;
+    height: 0.4533333333rem;
+    background: #26c4b6;
+    position: absolute;
+    left: 0;
+    top: 0.2666666667rem; }
+  .con_m #ba_m {
+    background: #ffffff; }
+  .con_m #img_2 {
+    background: none;
+    border-radius: 0; }
+  .con_m #img_3 {
+    background: none;
+    border-radius: 0; }
+
+/*# sourceMappingURL=health.css.map */

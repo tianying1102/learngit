@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/flexible_css.debug.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/identity_none.css">
+    <title>身份验证</title>
+</head>
+<body>
+<!--头部-->
+<div class="ico_m">
+<div class="id_top">
+    <div class="id_con">
+        身份验证
+        <img src="images/retu.png" alt="" id="return_f">
+    </div>
+</div>
+    <!--jing-->
+    <div class="ico_null">
+        <img src="images/kp.png" alt="">
+        <p>没有查询到您的雇员信息</p>
+        <p>请检测您的身份信息是否正确</p>
+    </div>
+</div>
+
+</body>
+<!--统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?acb6165d39166a0e697e4c05679d1692";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/art-template.js"></script>
+<script src="js/verifymobile.js"></script>
+<script src="js/common.js"></script>
+<script>
+   $('#return_f').click(function(){
+       window.history.go(-1);
+   })
+</script>
+</html>

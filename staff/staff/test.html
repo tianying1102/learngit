@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/flexible_css.debug.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/new.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <title>员工服务</title>
+</head>
+<body>
+<div style="height:100%;">
+    <div class="container_staff" id="com_m">
+        <dl class="xin_z">
+            <dt><img src="images/xinzi.png" alt=""></dt>
+            <dd  class="m_c" style="text-indent:  -0.2em;">薪资查询</dd>
+        </dl>
+        <dl class="fu_shop" >
+            <dt><img src="images/fuli.png" alt=""></dt>
+            <dd class="m_c" style="text-indent: -0.2em;">福利商城</dd>
+        </dl>
+        <dl class="examination" >
+            <dt><img src="images/tijian.png" alt=""></dt>
+            <dd  class="m_c" style="text-indent:  -0.2em;">员工体检</dd>
+        </dl>
+        <dl class="ti_jian" >
+            <dt><img src="images/licai.png" alt=""></dt>
+            <dd  class="m_c" style="text-indent:  -0.2em;">员工理财</dd>
+        </dl>
+    </div>
+    <!--轮播弹窗-->
+    <div class="carousel">
+        <div class="carousel1">
+            <div class="swiper-container" id="myswiper2">
+                <div class="swiper-wrapper" id="im">
+                    <!-- <div class="swiper-slide">
+                         <img src="images/banner.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="images/banner.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="images/banner.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="images/banner.png" alt="">
+                     </div>-->
+                </div>
+                <!--分页按钮-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="bimm"></div>
+    <!--福利中心3个板块-->
+    <div class="plate1" id="welfare_Center">
+        <div class="welfare">
+            福利商城
+            <img src="images/return_right.png" alt="">
+        </div>
+    </div>
+    <!--1-->
+    <div class="plate">
+        <div class="plate2">
+            <div data-url="https://h5.zuifuli.com/rechargecentre/wrapper?type=tel%26id=1035003" class="bill">
+                <img src="images/huafei1.png" alt="">
+                话费充值
+            </div>
+            <div data-url="https://api.zuifuli.com/api/open/v1/open/merchant/lanuch?merchantCode=HW&redirect=healthservice" class="register">
+                <img src="images/wang1.png" alt="">
+                预约挂号
+            </div>
+            <div data-url="https://mall.zuifuli.com/home"  class="mall">
+                <img src="images/gua1.png" alt="">
+                京东商城
+            </div>
+            <div data-url="https://best.zuifuli.com/goods/tabsListHome" class="netEase">
+                <img src="images/dong1.png" alt="">
+                网易严选
+            </div>
+        </div>
+        <div class="bimm"></div>
+        <div class="plate1">
+            <div class="welfare" id="yuan_m">
+                员工体检
+                <img src="images/return_right.png" alt="">
+            </div>
+        </div>
+        <!--员工体检-->
+        <div class="yuan_two">
+            <div class="yuan_c">
+                <img src="images/yuyue.png" alt="" data-url="http://m.360guanai.com/sh/pro/productScreenList/?regfrom=yl" class="img_1">
+                <img src="images/tao.png" alt="" class="img_2" data-url="http://m.360guanai.com/sh/pro/cardList/?regfrom=yl">
+            </div>
+        </div>
+        <div class="bimm"></div>
+        <div class="plate1">
+            <div class="welfare" id="licai">
+                员工理财
+                <img src="images/return_right.png" alt="">
+            </div>
+        </div>
+        <div class="plate3">
+            <img src="images/jifen.png" alt="" class="fen">
+            <div class="plate3_con">
+                <p class="p1">员工理财宝</p>
+                <p class="p2">七日年化收益 <span>3.5<time>%</time>～4.5<time>%</time></span></p>
+                <p class="p3">一元起购，随存随取，随心转换高收益产品</p>
+                <div class="money">去理财</div>
+                <div class="free">
+                    <span>收益稳健</span>
+                    <span>自由存取</span>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</div>
+<!--需要用的三个弹窗-->
+<!--1-->
+<div class="Popup hide" id="tan_1"  >
+    <div class="Popup_top">
+        <img src="images/miss.png" alt="" class="cha close">
+        开通企业福利
+    </div>
+    <div class="input_container">
+        <div class="input_name">
+            <laber class="laber">姓名</laber>
+            <input type="text" class="name_mm">
+        </div>
+        <div class="input_name">
+            <laber class="laber" id="te_bie">身份证</laber>
+            <input type="text" class="i_card">
+        </div>
+    </div>
+    <span class="button_m ji_h" >激活福利</span>
+
+</div>
+<!--2-->
+<div class="Popup hide" id="tan_2">
+    <div class="Popup_top">
+        <img src="images/miss.png" alt="" class="cha_2">
+        激活成功
+    </div>
+    <div class="input_container">
+       <div class="Open">
+           <img src="images/li_wu.png" alt="">
+           <p>你的当前企业积分为<time>0</time></p>
+       </div>
+    </div>
+    <span class="button_m shop_f">进入福利商城</span>
+
+</div>
+<!--3-->
+<div class="Popup hide" id="tan_3">
+    <div class="Popup_top">
+        <img src="images/miss.png" alt="" class="cha_3 close">
+        激活失败
+    </div>
+    <div class="input_container">
+       <div class="fail">
+           <div class="fail_container">
+             请联系你的企业是否已开通福利。并确保信息正确无误
+           </div>
+       </div>
+        <p class="p_fail name">姓名:&nbsp王志伟</p>
+        <p class="p_fail idcard">身份证:&nbsp4304426********5122</p>
+    </div>
+    <div class="butt_two">
+        <span class="sui_b">便便逛逛</span>
+        <span class="guang_g">重新激活</span>
+    </div>
+
+</div>
+<!--弹窗背景-->
+<div class="bac_jing hide"></div>
+</body>
+<!--广告banner-->
+<script type="text/template" id="banner">
+          <%for(var i=0;i<$data.length;i++){%>
+              <div class="swiper-slide img_y" data-url="<%=$data[i].resource.resourceValue%>" data-ac="<%=$data[i].resource.resourceType%>" data-title="<%=$data[i].resource.title%>">
+                  <img  src="<%=$data[i].resource.thumbImageUrl%>" alt="" >
+              </div>
+          <%}%>
+</script>
+<!--统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?acb6165d39166a0e697e4c05679d1692";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/art-template.js"></script>
+<script src="js/common.js"></script>
+<script src="js/new.js"></script>
+<script>
+    /*跳转门店的信息*/
+    function getSearchString(key) {
+        // 获取URL中?之后的字符
+        var str = location.search;
+        str = str.substring(1, str.length);
+        // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
+        var arr = str.split("&");
+        var obj = new Object();
+
+        // 将每一个数组元素以=分隔并赋给obj对象
+        for (var i = 0; i < arr.length; i++) {
+            var tmp_arr = arr[i].split("=");
+            // 如果url参数是Unicode编码将url解码
+            obj[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+        }
+        return obj[key];
+    }
+    var token = getSearchString("token");
+    var client_id = getSearchString("client_id");
+    var phone=getSearchString("phone");
+    var appkey=getSearchString("appkey");
+    var user_id=getSearchString('user_id');
+    var appSource=getSearchString('appSource');
+    var type='';
+    var url='';
+    var title='';
+    /*员工体检*/
+    $('.examination').click(function(){
+        location.href = 'health1.html?token='+token+'&client_id='+client_id+'&phone='+phone+'&appkey='+appkey+'&appSource='+appSource;
+    })
+    /*yuan_m*/
+    $('#yuan_m').click(function(){
+        location.href = 'health1.html?token='+token+'&client_id='+client_id+'&phone='+phone+'&appkey='+appkey+'&appSource='+appSource;
+    })
+    //swiper的初始化
+    var fruits_listfruits_list = new Swiper('#myswiper2', {
+        //freeMode: true,
+        //slidesPerView: 'auto',
+        observer:true,
+        observeParents:true,
+        preventClicks : false,
+        /*loop : true,*/
+        autoplay: 3000,
+        autoplayDisableOnInteraction:false,
+        pagination : '.swiper-pagination'   //可选选项，自动滑动
+    });
+        /*广告banner图的请求*/
+        get_img();
+        /*理财*/
+    $('.ti_jian').click(function(){
+        get_cai();
+    });
+    $('.money').click(function(){
+        get_cai();
+    });
+    $('#licai').click(function(){
+        get_cai();
+    })
+
+    /*赚积分*/
+    $('.fen').click(function(){
+        get_fen();
+    });
+
+    /*
+        $('.welfare').click(function(){
+            get_cai();
+        });
+       */
+        /*banner的跳转*/
+    $('#im').on('click','.img_y',function(){
+            url=$(this).attr('data-url');
+            type=$(this).attr('data-ac');
+            title=$(this).attr('data-title');
+            console.log(url);
+            console.log(type);
+            console.log(title)
+            if (appSource === "ios") {
+               /* location.href=$(this).attr('data-url')+'?token='+token+'&appkey='+appkey;*/
+               if(type==1){
+                   window.location.href = "ios://toJumpYLRecruitWebVC?"+'resourceValue='+url;
+               }
+               if(type==2){
+                   window.location.href = "ios://toJumpYLPopularTopicCircleDetail?"+'resourceValue='+url
+               }
+               if(type==3){
+                   window.location.href = "ios://toJumpYLPopularComDetailsView?"+'resourceValue='+url
+               }
+               if(type==4){
+
+                   window.location.href = "ios://toJumpYLAgentRewardInvite?"+'resourceValue='+url+'&title='+title
+               }
+              if(type==5){
+                   window.location.href = "ios://toJumpUserCheckSalary"
+                       }
+
+              if(type==6){
+                   window.location.href = "ios://toJumpYLUserTypeSelectVC"
+               }
+              if(type==7){
+                   window.location.href = "ios://toFamousTeacherClassRoom"
+               }
+            if(type==8){
+                   window.location.href = "ios://toJumpYLOneStepSeekJobVC"
+               }
+               if(type==9){
+                   window.location.href = "ios://toJumpOnlineClass?"+'resourceValue='+url;
+               }
+                if(type==10){
+                    window.location.href = "ios://toJumpYLPopularCompanyCommentVC"
+                }
+            } else if(appSource==='android')
+            {
+                window.control.toAdLinkPage(type,url)
+            };
+        });
+    function get_fen(){
+        if (appSource === "ios") {
+            $.ajax({
+                type: "post",
+                dataType:"json",
+                async:false,
+                url:"/api/v2/duiba/integral/duibaMallAutoLoginUrl",
+                data: {
+                    appkey:appkey,
+                    client_id:client_id,
+                    token:token,
+                },
+                success:function (res) {
+                    console.log(res.url);
+                    location.href=res.url
+                    //  console.log(hrefUrl);
+                },
+                error:function (e) {
+                    console.log(e);
+                }
+            })
+        } else if(appSource==='android')
+        {
+            window.control.toDuiBa()
+        };
+    }
+
+    /*判断是否登陆*/
+    function login(){
+        if (appSource === "ios") {
+            window.location.href = "ios://toLogin?needValideMobile=1";
+        } else if(appSource==='android')
+        {
+            /*   alert(1)*/
+            window.control.toLogin(1)
+        };
+    }
+    /*理财*/
+    function get_cai(){
+        if (appSource === "ios") {
+            if(token == "null"||token==null||token==''){
+                login()
+            }else{
+                window.location.href = "ios://toJumpTongLian";
+            }
+        } else if(appSource==='android')
+        {
+            window.control.toTongLianPay()
+        };
+    }
+    /*广告banner图的获取*/
+    function get_img(){
+        $.ajax({
+            type: "get",
+            dataType:"json",
+            url:"/api/v8/adv/findAdvertResourceRecordByPositionId",
+            data: {
+                positionId:'5aa8940871d03f3cdc4ef5c8'
+            },
+            success:function (res) {
+               /* type=res.type;*/
+                console.log(res)
+                var list=template('banner',res.data);
+                $('#im').html(list);
+            },
+            error:function (e) {
+                console.log(e);
+            }
+        })
+    }
+
+    /*进入页面判断是否登录中调用原生方法*/
+
+</script>
+</html>
