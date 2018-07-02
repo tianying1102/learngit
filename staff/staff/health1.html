@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/flexible_css.debug.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/health1.css">
+    <title>员工体检</title>
+</head>
+<body>
+<div  class="health_one">
+    <div class="heal_1">
+        <div class="health_im">
+            <img src="images/tu11.png" alt="" data-url="http://m.360guanai.com/?regfrom=yl" class="im1">
+        </div>
+        <div class="health_im">
+            <img src="images/tu22.png" alt="" class="im2">
+        </div>
+    </div>
+
+</div>
+</body>
+<!--统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?acb6165d39166a0e697e4c05679d1692";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="js/zepto.min.js"></script>
+<script>
+    var hrefUrl="";
+    var url="";
+    function getSearchString(key) {
+        // 获取URL中?之后的字符
+        var str = location.search;
+        str = str.substring(1, str.length);
+        // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
+        var arr = str.split("&");
+        var obj = new Object();
+
+        // 将每一个数组元素以=分隔并赋给obj对象
+        for (var i = 0; i < arr.length; i++) {
+            var tmp_arr = arr[i].split("=");
+            // 如果url参数是Unicode编码将url解码
+            obj[decodeURIComponent(tmp_arr[0])] = decodeURIComponent(tmp_arr[1]);
+        }
+        return obj[key];
+    }
+    var token = getSearchString("token");
+    var appSource=getSearchString('appSource');
+    var client_id = getSearchString("client_id");
+    var phone=getSearchString("phone");
+    var appkey=getSearchString("appkey");
+    /*进入页面判断是否登录中调用原生方法*/
+    function login(){
+        if (appSource === "ios") {
+            window.location.href = "ios://toLogin?needValideMobile=1";
+        } else if(appSource==='android')
+        {
+            window.control.toLogin(1)
+        };
+    }
+    $(function(){
+      if(token == "null"||token==null||token==''){
+          $('.im1,.im2').click(function(){
+              url = $(this).attr("data-url");
+              //console.log(url)
+              login()
+          })
+      }else{
+          $('.im1').click(function(){
+              location.href=$(this).attr("data-url")
+             /* getRedirectUrl($(this).attr("data-url"),appkey,client_id,token,phone); location.href = hrefUrl;
+              console.log(hrefUrl)*/
+          })
+          $('.im2').click(function(){
+              location.href = 'health.html?token='+token+'&appSource='+appSource;
+          })
+      }
+    })
+
+    function getRedirectUrl(url,appkey,client_id,token,phone){
+        $.ajax({
+            type: "post",
+            dataType:"json",
+            async:false,
+            url:"/api/platform/v1/store/trade/zfl/login",
+            data: {
+                appkey:appkey,
+                client_id:client_id,
+                token:token,
+                phone:phone,
+                redirect: url,
+                name:''
+            },
+            success:function (res) {
+                console.log(res);
+                hrefUrl = res.url;
+                //  console.log(hrefUrl);
+            },
+            error:function (e) {
+                console.log(e);
+            }
+        })
+    }
+</script>
+</html>

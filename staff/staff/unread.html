@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/flexible_css.debug.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/health.css">
+    <title>健康报告</title>
+</head>
+<body>
+<div class="health_m">
+    <img src="images/xin3_03.png" alt="">
+</div>
+<div class="con_m">
+    <div class="con_1">
+        体检地址
+    </div>
+    <div class="bac_c" id="ba_m">
+        <div class="b_container">
+            <div class="img_1" id="img_2">
+                <div class="img_left">
+                    <img src="images/xin1.png" alt="">
+                </div>
+                <div class="contain_img">
+                    <p class="p_1">优蓝新城-上饶门店</p>
+                    <p class="p_2">电话:&nbsp;&nbsp;18615564931</p>
+                    <p class="p_3">地址:&nbsp;&nbsp;江西上饶市广丰区</p>
+                </div>
+                <div class="right_im" id="mian1">
+                    免费预约
+                </div>
+
+            </div>
+            <div class="img_1" id="img_3">
+                <div class="img_left">
+                    <img src="images/xin2.png" alt="">
+                </div>
+                <div class="contain_img">
+                    <p class="p_1">优蓝新城-天津滨海门店</p>
+                    <p class="p_2">电话:&nbsp;&nbsp;15776693944</p>
+                    <p class="p_3">地址:&nbsp;&nbsp;天津市滨海新区</p>
+                </div>
+                <div class="right_im" id="mina2">
+                    免费预约
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?acb6165d39166a0e697e4c05679d1692";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="js/zepto.min.js"></script>
+<script>
+    $(function(){
+        /*跳转至免费预约门店*/
+        /*上饶门店*/
+        $('#mian1').click(function(){
+            location.href='https://life-api.youlanw.com/store/storeList.html?branch_id=99'
+        })
+        /*天津门店*/
+        $('#mina2').click(function(){
+            location.href='https://life-api.youlanw.com/store/storeList.html?branch_id=13'
+        })
+    })
+</script>
+</html>

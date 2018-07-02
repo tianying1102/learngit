@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA;;mBAEmB;AACnB,SAAS;AAET,YAAY;AAEZ,UAAU;AAEV,SAAS;AAET,SAAS;AAET,SAAS;AAET,SAAS;AAET,SAAS;AAET,cAAc",
+"sources": ["_variables.scss"],
+"names": [],
+"file": "top.css"
+}

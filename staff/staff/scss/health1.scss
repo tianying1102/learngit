@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "variables";
+.health_one{
+  height:100%;
+  background:#eeeeee;
+  .heal_1{
+    height:100%;
+    margin:0 $margin_20;
+    position: relative;
+    .health_im{
+      width:100%;
+      height:(384rem/75);
+      background:#ffffff;
+      border-radius:(5rem/75);
+      position: absolute;
+      top:(32rem/75);
+      img{
+        height:100%;
+        width:100%;
+      }
+
+    }
+    .health_im:nth-of-type(2){
+      top:(444rem/75)
+    }
+  }
+}
